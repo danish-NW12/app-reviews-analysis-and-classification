@@ -1,0 +1,24 @@
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+openai>=1.0.0
+
+# API (FastAPI dashboard + datasets + auth)
+python-dotenv>=1.0.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.0.0
+email-validator>=2.0.0
+sqlalchemy>=2.0.0
+python-multipart>=0.0.6
+bcrypt>=4.0.0
+python-jose[cryptography]>=3.3.0
+
+# Analysis pipeline (main/analysis_pipeline.py)
+# Core pipeline runs with above deps only. Optional for full features:
+# xgboost>=2.0.0          # Churn model (task 7)
+sentence-transformers   # Clustering embeddings (task 9)
+hdbscan>=0.8.33          # Clustering (task 9); omit for KMeans fallback
+# transformers>=4.0.0     # Transformer sentiment (task 4)
+# torch                   # Often installed with transformers
